@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
-      POSTGRES_PASSWORD: CHANGEDBPASSWORD
+      POSTGRES_PASSWORD: CHANGEDBPASSWORD #change this
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -18,12 +18,12 @@ services:
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres:5432/keycloak
       KC_DB_USERNAME: keycloak
-      KC_DB_PASSWORD: CHANGEDBPASSWORD
-      KC_HOSTNAME: "something.example.com"
+      KC_DB_PASSWORD: CHANGEDBPASSWORD #change this
+      KC_HOSTNAME: "something.example.com" #change this
       KC_PROXY_HEADERS: xforwarded
       KC_HTTP_ENABLED: "true"
       KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: YOURADMINPASSWORD
+      KEYCLOAK_ADMIN_PASSWORD: YOURADMINPASSWORD #change this
     command: start
     depends_on:
       - postgres
