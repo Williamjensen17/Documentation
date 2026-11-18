@@ -3,7 +3,7 @@ services:
     image: 'jc21/nginx-proxy-manager:2.16.0'
     restart: unless-stopped
     environment:
-      TZ: "Australia/Brisbane"
+      TZ: "Europe/Copenhagen"
     ports:
       - '80:80'
       - '81:81'
