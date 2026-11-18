@@ -45,4 +45,8 @@ https://Server-ip:20443/
 
 Now lets set up nginx, so we can get mail.doain.com
 
-Copy the config file and docker compose up -d
+Copy the config file and run 
+docker compose up -d
+now go to http://Server-IP:81/
+
+Create a user
