@@ -50,3 +50,23 @@ docker compose up -d
 now go to http://Server-IP:81/
 
 Create a user
+
+Now you can add a proxy host
+
+Example:
+mail.example.com
+Https Server-ip 20443
+
+Go to ssl
+then request a new certificate
+force ssl on
+
+mail.example.com now works.
+
+
+Keycloak installation
+
+go to /opt/apps
+mkdir Keycloak
+cd Keycloak
+now copy the keycloak docker compose file and edit it to fit
